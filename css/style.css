@@ -1,0 +1,391 @@
+/* comienzo estilos index */
+
+html {
+    /* por defecto el html tiene el valor de font-size:16px */
+    /* 62.5% = 10px */ 
+    /* 1rem = 10px */
+    /* 20px = 2rem */
+    /* 50px = 5rem */
+    /* 500px = 50rem */
+    /* 5px = 0.5rem */
+    /* 21px = 2.1rem*/
+    font-size: 62.5%; 
+}
+body {
+    font-size: 15px;
+    font-family:fantasy;
+    font-weight: 500;
+}
+body {
+    background: black
+  }
+  body {
+    overflow-x: hidden; /* Evita el desbordamiento horizontal */
+    overflow-y: auto; /* Permite el desbordamiento vertical si es necesario */
+} 
+/* Esto aplica el estilo a la barra de desplazamiento en general */
+::-webkit-scrollbar {
+    width: 10px; /* Ancho de la barra de desplazamiento */
+}
+/* Esto aplica el estilo al "pulgar" o la parte móvil de la barra de desplazamiento */
+::-webkit-scrollbar-thumb {
+    background: #888; /* Color del pulgar */
+    border-radius: 10px; /* Bordes redondeados del pulgar */
+}
+/* Esto aplica el estilo al pulgar cuando se pasa el cursor */
+::-webkit-scrollbar-thumb:hover {
+    background: #555; /* Color del pulgar al pasar el cursor */
+}
+  .whatsapp-button {
+    display:inline-block;
+    background-color: #25D366;
+    color: white;
+    padding: 5px 5px;
+    border-radius: 50px;
+    text-decoration: none;
+    z-index: 9999;
+}
+.whatsapp-button i {
+    color: white;
+    font-size: 34px;
+    margin-right: 3px;
+    margin-left: 3px;
+   
+}
+.whatsapp-button {
+    position: fixed;
+    left: 10px;
+    bottom: 20px;
+}
+.whatsapp-button:hover{
+    transform: scale(1.2);
+    transition: transoform 0.3s ease-in-out;
+}
+@media (max-width: 550px) {
+    .whatsapp-button i {
+        font-size: 20px;
+        padding-right: 3px;
+        padding-left: 3px;
+    }
+}
+.navbar {
+    animation: slideIn 1.0s ease-out;
+}
+@keyframes spinAndGrow {
+    0% {
+        transform: rotate(0deg) scale(1);
+    }
+    80% {
+        transform: rotate(1080deg) scale(1);
+    }
+    100% {
+        transform: rotate(1080deg) scale(1.1);
+    }
+}
+.navbar-brand img {
+    animation: spinAndGrow 2s cubic-bezier(0.36, 0.07, 0.19, 0.97);
+}
+.navbar-brand img{
+    width: 120px;
+    border-radius: 50%;
+}
+.nav-link{
+    color: white;
+    
+}
+.nav-link:hover {
+    transform: scale(1.2);
+    transition: transform 0.3s ease-in-out;
+    color: white; 
+}
+.navbar-nav {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba(255, 255, 255)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+.nav-link.active,
+.nav-link:focus {
+    color: white;
+}
+#carouselExampleInterval img {
+    object-fit: cover;
+    height: 500px;
+    padding: 10px 10px;
+    
+}
+@media (max-width: 700px) {
+    #carouselExampleInterval img {
+        height: 200px;
+    }
+}
+#carouselExampleInterval{
+    margin-bottom: 55px;
+}
+#titulo{
+    height: 100px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+#titulo {
+    background-color: black; /* Fondo negro */
+    padding: 20px; /* Espacio interior del div */
+    border: 2px solid white; /* Borde blanco */
+    border-radius: 10px;
+    
+  }
+  h2 {
+    font-family: 'Arial Black', Gadget, sans-serif; /* Tipo de letra */
+    font-size: 30px; /* Tamaño de la letra */
+    color: white; /* Color de la letra */
+    text-align: center; /* Centrar el texto */
+    text-shadow: 7px 7px 7px #000000; /* Sombra del texto */
+  }
+  h2:hover{
+    text-decoration: underline;
+    color: white;
+  } 
+  h2 {
+    font-family: 'Arial Black', Gadget, sans-serif;
+    font-size: 36px;
+    color: white;
+    text-align: center;
+    text-shadow: 2px 2px 4px #000000;
+    font-style: italic;
+  }
+  .card {
+    transition: all 0.5s ease; /* Transición suave al cambiar los estilos */
+  }
+  .card:hover {
+    transform: scale(1.03); /* Aumentar el tamaño al pasar el cursor */
+  }
+  .card {
+    padding: 0px; /* Sin padding */
+    border: none; /* Sin borde */
+  }
+  .card > .card-body {
+    padding: 15px; /* Agrega padding al contenido de la tarjeta, si es necesario */
+  }
+  .card-img-top {
+    width: 100%; /* Ancho de la imagen al 100% */
+    border: none; /* Sin borde */
+    margin: 0; /* Sin margen */
+    padding: 0; /* Sin padding */
+    overflow: hidden; /* Ocultar cualquier parte de la imagen que se salga del contenedor */
+  }
+  .card {
+    margin: 10px;
+}
+#titulo{
+    height: 100px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+#titulo1 {
+    background-color: black; /* Fondo negro */
+    padding: 20px; /* Espacio interior del div */
+    border: 2px solid white; /* Borde blanco */
+    border-radius: 10px;
+    
+  }
+  h2 {
+    font-family: 'Arial Black', Gadget, sans-serif; /* Tipo de letra */
+    font-size: 30px; /* Tamaño de la letra */
+    color: white; /* Color de la letra */
+    text-align: center; /* Centrar el texto */
+    text-shadow: 7px 7px 7px #000000; /* Sombra del texto */
+  }
+  h2:hover{
+    text-decoration: underline;
+    color: white;
+  }
+  h2 {
+    font-family: 'Arial Black', Gadget, sans-serif;
+    font-size: 36px;
+    color: white;
+    text-align: center;
+    text-shadow: 2px 2px 4px #000000;
+    font-style: italic;
+  }
+#titulo1{
+    margin-bottom: 30px;
+}
+#titulo3 {
+    background-color: black; /* Fondo negro */
+    padding: 20px; /* Espacio interior del div */
+    border-radius: 10px;
+    border-color: white;
+ }
+
+
+h2 {
+    font-family: 'Arial Black', Gadget, sans-serif; /* Tipo de letra */
+    font-size: 30px; /* Tamaño de la letra */
+    color: white; /* Color de la letra */
+    text-align: center; /* Centrar el texto */
+    text-shadow: 7px 7px 7px #000000; /* Sombra del texto */
+  }
+  
+  h2:hover{
+    text-decoration: underline;
+    color: white;
+  }
+  h2 {
+    font-family: 'Arial Black', Gadget, sans-serif;
+    font-size: 36px;
+    color: white;
+    text-align: center;
+    text-shadow: 2px 2px 4px #000000;
+    font-style: italic;
+  }
+  body {
+    background-image: url("../img/Backgroundns.jpg");
+}
+.asd{
+    color: white;
+}
+.asd img {
+    margin: 10px; /* Esto añade un margen alrededor de la imagen. Puedes ajustar el valor a tu gusto */
+    border-radius: 15px; /* Esto redondea los bordes de la imagen. Puedes ajustar el valor a tu gusto */
+}
+.resaltado {
+    background-color: rgb(211, 211, 9); /* Esto es el color del resaltador. Puedes cambiar 'yellow' por el color que prefieras */
+    color: black;
+}
+#carouselExampleInterval{
+        margin-top: 100px; /* o el valor que corresponda a la altura del header */
+}
+.card-body {
+    background-color: rgb(154, 208, 154); /* Cambia esto al color que prefieras para el fondo */
+    color: black; /* Cambia esto al color que prefieras para el texto */
+}
+.btn:active {
+    background-color: rgb(54, 27, 27); /* Cambia esto al color que prefieras */
+    color: white; /* Cambia esto al color que prefieras para el texto */
+}
+.card {
+    border-radius: 15px; /* Cambia esto al radio que prefieras */
+}
+.card-body {
+    border-bottom-left-radius: 15px; /* Asegúrate de que este valor sea el mismo que el de .card */
+    border-bottom-right-radius: 15px; /* Asegúrate de que este valor sea el mismo que el de .card */
+    
+}
+.btn {
+    background-color: white; /* Color de fondo del botón */
+    color: black; /* Color del texto del botón */
+    border: 2px solid black; /* Borde negro del botón */
+    transition: all 0.5s ease; /* Transición suave al cambiar los estilos */
+}
+.btn:hover {
+    transform: scale(1.2); /* Aumentar el tamaño al pasar el cursor */
+    border-color: black; /* Mantener el color del borde negro al pasar el cursor */
+}
+.btn:active {
+    background-color: white; /* Mantener el color de fondo blanco al hacer clic */
+    color: black; /* Mantener el color del texto negro al hacer clic */
+}
+.card{
+    font-family: sans-serif;
+    font-weight: 400;
+}
+.btn{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400px;
+}
+.btn-compra{
+    background-color: rgb(2, 42, 63);
+    color: white;
+}
+.btn-compra:hover{
+    background-color:  rgb(2, 42, 63);
+    color: white;
+}
+#titulo3 {
+    height: 100px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+#titulo3 {
+    background-color: black; /* Fondo negro */
+    padding: 20px; /* Espacio interior del div */
+    border: 2px solid white; /* Borde blanco */
+    border-radius: 10px;
+    
+  }
+  h2 {
+    font-family: 'Arial Black', Gadget, sans-serif; /* Tipo de letra */
+    font-size: 30px; /* Tamaño de la letra */
+    color: white; /* Color de la letra */
+    text-align: center; /* Centrar el texto */
+    text-shadow: 7px 7px 7px #000000; /* Sombra del texto */
+  }
+  h2:hover{
+    text-decoration: underline;
+    color: white;
+  }
+  h2 {
+    
+    font-family: 'Arial Black', Gadget, sans-serif;
+    font-size: 36px;
+    color: white;
+    text-align: center;
+    text-shadow: 2px 2px 4px #000000;
+    font-style: italic;
+  }
+  #contacto h2{
+    border-color: black;
+    
+  }
+#contacto h2:hover{
+    transform: scale(1.1);
+}
+#contacto h2 {
+    text-shadow: -1px -1px 0 black, 2px -1px 0 black, -1px 2px 0 black, 2px 2px 0 black; /* Crea un efecto de borde negro alrededor del texto */
+}
+
+.btn {
+    background-color: #006400; /* Color de fondo del botón: verde oscuro */
+    color: white; /* Color del texto del botón: blanco */
+    transition: all 0.5s ease; /* Transición suave al cambiar los estilos */
+
+    &:hover {
+        background-color: #008000; /* Cambia el color de fondo a un verde más claro al pasar el cursor */
+        color: white; /* Mantén el color del texto blanco al pasar el cursor */
+    }
+
+    &:active {
+        background-color: #004d00; /* Cambia el color de fondo a un verde aún más oscuro al hacer clic */
+        color: white; /* Mantén el color del texto blanco al hacer clic */
+    }
+}
+#contacto {
+    background: linear-gradient(to right, #8FBC8F, #D3D3D3); /* Fondo degradado de verde grisáceo a gris claro */
+}
+h1 {
+    font-family: 'Arial Black', Gadget, sans-serif;
+    font-size: 36px;
+    color: white;
+    text-align: center;
+    text-shadow: 2px 2px 4px #000000;
+    font-style: italic; 
+}
+
+h1:hover{
+    text-decoration: underline;
+    color: white;
+}
