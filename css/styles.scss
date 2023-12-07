@@ -37,7 +37,7 @@ body {
   bottom: 20px;
 }
 .whatsapp-button:hover {
-  transform: scale(1);
+  transform: scale(1.2);
   transition: transform 0.3s ease-in-out;
 }
 
@@ -120,7 +120,7 @@ h2:hover {
   color: white;
 }
 .nav-link:hover {
-  transform: scale(1);
+  transform: scale(1.2);
   transition: transform 0.3s ease-in-out;
 }
 
@@ -144,7 +144,7 @@ h2:hover {
 }
 @media (min-width: 768px) {
   .nav-link:hover {
-    transform: scale(1);
+    transform: scale(1.2);
     transition: transform 0.3s ease-in-out;
   }
 }
@@ -334,4 +334,4 @@ h1:hover {
   color: white;
 }
 
-/*# sourceMappingURL=styles.css.map */
+/*# sourceMappingURL=styles.scss.map */

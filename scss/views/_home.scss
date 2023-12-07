@@ -42,10 +42,15 @@
 }
 .nav-link{
     color: white;
-    @include scaleOnHover;
+
+    @media (min-width: 768px) {
+        @include scaleOnHover;
+    }
 
     &:hover {
+        scale: (1.0);
         color: white;
+        text-decoration: underline;
     }
 }
 
